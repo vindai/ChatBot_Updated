@@ -74,9 +74,9 @@ def getstate(key, job_id, Sessionid,*vartuple):
         if(vartuple[0]=="old candidate"):
             previous_query, entity_value = data_base.check_old_entity(vartuple[2])
             if entity_value:
-                previous_query = ''.join('{} {}'.format(
-                    "I remember that you have queried about %s visa details in your previous chat. Your previous query : " % ','.join(
-                        entity_value).upper(), ','.join(previous_query)))
+                previous_query = ''.join(
+                    "I do have remember that you are a %s holder" % ','.join(
+                        entity_value).upper())
               
                 return previous_query
             else:
