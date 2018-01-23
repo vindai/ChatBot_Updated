@@ -1,5 +1,7 @@
 import MySQLdb
 from flask import session
+
+
 #connects with Database
 def get_connection():
     db = MySQLdb.connect('localhost', 'root', '', 'chat')
@@ -17,28 +19,26 @@ def insert_db(jobs_id,candidate_id,bot_response,user_replies,entity_name,entity_
         db.rollback()
         print(e)
     db.close()
+
+	
 #Checks whether the candidate Id exist in database or not
 def check_candidateid(new_id):
     data=[]
     cursor, db = get_connection()
     try:
-        cursor.execute("select * from chat_details")
+        cursor.execute("select candidate_id from chat_details where candidate_id='%s'" %new_id)
         db.commit()
         results = cursor.fetchall()
-        for row in results:
-            candidate_id = row[1]
-            data.append(candidate_id)
-        print(data)
-        if new_id in data:
-            status = 'old candidate'
-            return status
+        if results:
+            return True
         else:
-            status = 'new candidate'
-            return status
+            return False
     except Exception as e:
         db.rollback()
         print(e)
     db.close()
+
+	
 #Checks entity and value of the candidate from the previous chat to check whether they have queried or not.
 def check_old_entity(candidate_id):
     response=[]

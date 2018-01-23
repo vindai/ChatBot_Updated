@@ -43,17 +43,17 @@ def send_response():
             #Checks the status of the candidate whether it is old or new
             candidate_status=data_base.check_candidateid(candidate_id)
             #Stores the candidate status in redis
-            if candidate_status=='new candidate':
+            if candidate_status==False:
                 status='new candidate'
                 redis_store.set(Sessionid,'new candidate')
                 response_state = getstate(key, jobs_id, Sessionid,status)
-            elif candidate_status=='old candidate' and (redis_store.get(Sessionid)!=None):
+            elif candidate_status==True and (redis_store.get(Sessionid)!=None):
                 status = 'new candidate'
                 response_state = getstate(key, jobs_id, Sessionid,status)
             else:
                status='old candidate'
                response_state = getstate(key, jobs_id, Sessionid,status,entity_value,candidate_id)
-            data_base.insert_db(jobs_id,candidate_id,response_state,user_question,entity_name,entity_value,current_date)
+               #data_base.insert_db(jobs_id,candidate_id,response_state,user_question,entity_name,entity_value,current_date)
             dic_to_user = {
                 'jobs_id': jobs_id,
                 'usertype': usertype,

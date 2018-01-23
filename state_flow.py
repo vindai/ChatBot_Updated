@@ -67,26 +67,30 @@ def getstate(key, job_id, Sessionid,*vartuple):
         if (prev_intent == "greet_intent"):
             return "Thats fine ..let's catchup later when you are ready"
 
-    if key == "visa_query_intent":
+        if key == "visa_query_intent":
         redis_store.set(Sessionid + ':prev_intent', str(key))
         visa_list = ['We will let you know about visa related details after having a discussion with our manager','You will be intimated as soon as possible about visa details']
-        return ''.join(random.sample(visa_list, 1))
+        # Checks previous entities for old candidate and return response
+        if(vartuple[0]=="old candidate"):
+            previous_query, entity_value = data_base.check_old_entity(vartuple[2])
+            if entity_value:
+                previous_query = ''.join('{} {}'.format(
+                    "I remember that you have queried about %s visa details in your previous chat. Your previous query : " % ','.join(
+                        entity_value).upper(), ','.join(previous_query)))
+              
+                return previous_query
+            else:
+                return ''.join(random.sample(visa_list, 1))
 
+        else:
+            return ''.join(random.sample(visa_list, 1))
+              
     if ((key == "positive_intent") or (key == "yes_intent") or (key == "no_intent") or (key == "negative_intent")):
-        '''if ("negative_intent" not in list_intents) and ("no_intent" not in list_intents) :'''
+        '''if ("negative_intent " not in list_intents) and ("no_intent" not in list_intents) :'''
         redis_store.set(Sessionid + ':prev_intent', str(key))
         total_question, preq = Fetch_JobQuestions(jobid=job_id)
         preq_question = Fetch_Question(preq, current_question, total_question)
         redis_store.set(Sessionid + ':question', str(current_question))
-        #Checks previous entities for old candidate and return response
-        if int(current_question) == int(total_question)+1 and (vartuple[0] == 'old candidate'):
-            previous_query,entity_value = data_base.check_old_entity(vartuple[2])
-            if previous_query:
-                previous_query = ''.join('{} {}'.format("I remember that you have queried about %s visa details in your previous chat. Your previous query : "%','.join(entity_value).upper(),','.join(previous_query)))
-                return preq_question + previous_query
-            else:
-                return preq_question
-        else:
-            return preq_question
+        return preq_question
     else:
         return 'Oops!! Sorry I think, I need to be updated before I answer your queries :-)'
