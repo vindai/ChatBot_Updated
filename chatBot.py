@@ -46,10 +46,10 @@ def send_response():
             if candidate_status==False:
                 status='new candidate'
                 redis_store.set(Sessionid,'new candidate')
-                response_state = getstate(key, jobs_id, Sessionid,status)
+                response_state = getstate(key, jobs_id, Sessionid)
             elif candidate_status==True and (redis_store.get(Sessionid)!=None):
                 status = 'new candidate'
-                response_state = getstate(key, jobs_id, Sessionid,status)
+                response_state = getstate(key, jobs_id, Sessionid)
             else:
                status='old candidate'
                response_state = getstate(key, jobs_id, Sessionid,status,entity_value,candidate_id)
