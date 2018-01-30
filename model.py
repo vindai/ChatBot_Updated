@@ -1,7 +1,7 @@
 from rasa_nlu.model import Interpreter ,Metadata
 from rasa_nlu.config import RasaNLUConfig
 
-config =RasaNLUConfig('E:/chat_demo_updated/Data/config_spacy.json')
+config =RasaNLUConfig('C:/Users/Tilliconveli6/Desktop/New folder/ChatBot_Updated/Data/config_spacy.json')
 
 metadata = Metadata.load('./models/trained')
 

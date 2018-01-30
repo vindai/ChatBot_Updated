@@ -1,7 +1,9 @@
 import requests
 import json
 import re
-import redis as redis_store
+import redis
+
+redis_store = redis.StrictRedis("localhost")
 
 def Fetch_JobQuestions(jobid,clientid = "VAccess20171",clientname = "ChatBotAccess") :
     try:
@@ -22,20 +24,26 @@ def Fetch_JobQuestions(jobid,clientid = "VAccess20171",clientname = "ChatBotAcce
         print("Unable to access vind.ai jobdetails " + r.status_code)
 
 
-def Fetch_Question(preq,question_number,total_question):
+def Fetch_Question(preq,question_number,total_question,Sessionid):
     try:
        #Compared the question_number with the TotalPreQQuestions
          while int(question_number) <= int(total_question) :
             for every_preq in preq:
                    if str(every_preq.get("PreQid")) == str(question_number):
                         print(question_number)
+                        if int(question_number) == int(total_question):
+                            print("redis become empty")
+                            redis_store.set(Sessionid + ':flag', " ")
                         return every_preq.get("PreQQuestion")
+
+
+
          else:
+             redis_store.set(Sessionid + ':flag', " ")
+             return "Thank you! We will get back to you soon... I can help you if you have any other questions."
 
-            return "Thank you! We will get back to you soon... I can help you if you have any other questions."
 
-
-    except:
-
+    except Exception as e:
+        print(e)
         print("Unable to get prequalified question for this job ")
 

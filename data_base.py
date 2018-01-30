@@ -4,14 +4,14 @@ from flask import session
 
 #connects with Database
 def get_connection():
-    db = MySQLdb.connect('localhost', 'root', '', 'chat')
+    db = MySQLdb.connect('localhost', 'root', '', 'test')
     cursor = db.cursor()
     return cursor,db
 #inserts chat details to Database
 def insert_db(jobs_id,candidate_id,bot_response,user_replies,entity_name,entity_value,date):
     cursor,db = get_connection()
     print(jobs_id,candidate_id,bot_response,user_replies,date)
-    sql ="insert into chat_details (job_id,candidate_id,bot_response,user_replies,entity_name,entity_value,date) values ('%s','%s','%s','%s','%s','%s','%s')"%(jobs_id,candidate_id,bot_response,user_replies,entity_name,entity_value,date)
+    sql ="insert into chat_db (job_id,candidate_id,bot_response,user_replies,entity_name,entity_value,date) values ('%s','%s','%s','%s','%s','%s','%s')"%(jobs_id,candidate_id,bot_response,user_replies,entity_name,entity_value,date)
     try:
         cursor.execute(sql)
         db.commit()
@@ -46,14 +46,14 @@ def check_old_entity(candidate_id):
     try:
         #gets the Database connection
         cursor, db = get_connection()
-        cursor.execute('select entity_name,entity_value from chat_details where candidate_id ="%s" AND entity_value!="None" AND entity_name="visa_type"' % candidate_id)
+        cursor.execute('select entity_name,entity_value from chat_db where candidate_id ="%s" AND entity_value!="None" AND entity_type="visa_type"' % candidate_id)
         db.commit()
         results = cursor.fetchall()
         for value in results:
                 entity_value=value[1]
                 entity.append(entity_value)
                 cursor.execute(
-                    'select user_replies from chat_details where candidate_id ="%s" AND entity_value="%s"' % (candidate_id, entity_value))
+                    'select user_replies from chat_db where candidate_id ="%s" AND entity_value="%s"' % (candidate_id, entity_value))
                 db.commit()
                 result = cursor.fetchall()
                 response.append(''.join(result[0]))

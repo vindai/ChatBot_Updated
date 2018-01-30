@@ -9,9 +9,9 @@ import shutil
 SAVE_PATH = './models/trained/'
 
 #load the training data
-training_data = load_data('E:/chat_demo_updated/Data/rasa_data.json')
+training_data = load_data('C:/Users/Tilliconveli6/Desktop/New folder/ChatBot_Updated/Data/rasa_data.json')
 #Train the model
-config =RasaNLUConfig('E:/chat_demo_updated/Data/config_spacy.json')
+config =RasaNLUConfig('C:/Users/Tilliconveli6/Desktop/New folder/ChatBot_Updated/Data/config_spacy.json')
 trainer = Trainer(config)
 train_data=trainer.train(training_data)
 

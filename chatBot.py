@@ -27,6 +27,7 @@ def send_response():
         if redis_store.get(Sessionid +':question') == None:
             redis_store.set(Sessionid +':question',"0")
             redis_store.set(Sessionid +':prev_intent', " ")
+            redis_store.set(Sessionid +':flag', " ")
         if user_question:
             user_question=unicode(user_question)
             response = interpreter.parse(user_question.lower())
@@ -41,18 +42,18 @@ def send_response():
                 entity_name = response['entities'][0]['entity']
                 entity_value=response['entities'][0]['value']
             #Checks the status of the candidate whether it is old or new
-            candidate_status=data_base.check_candidateid(candidate_id)
+            # candidate_status=data_base.check_candidateid(candidate_id)
             #Stores the candidate status in redis
-            if candidate_status==False:
-                status='new candidate'
-                redis_store.set(Sessionid,'new candidate')
-                response_state = getstate(key, jobs_id, Sessionid)
-            elif candidate_status==True and (redis_store.get(Sessionid)!=None):
-                status = 'new candidate'
-                response_state = getstate(key, jobs_id, Sessionid)
-            else:
-               status='old candidate'
-               response_state = getstate(key, jobs_id, Sessionid,status,entity_value,candidate_id)
+            # if candidate_status==False:
+            #     status='new candidate'
+            #     redis_store.set(Sessionid,'new candidate')
+            #     response_state = getstate(key, jobs_id, Sessionid)
+            # elif candidate_status==True and (redis_store.get(Sessionid)!=None):
+            #     status = 'new candidate'
+            #     response_state = getstate(key, jobs_id, Sessionid)
+            # else:
+            #    status='old candidate'
+            response_state = getstate(key, jobs_id, Sessionid,status,entity_value,candidate_id)
                #data_base.insert_db(jobs_id,candidate_id,response_state,user_question,entity_name,entity_value,current_date)
             dic_to_user = {
                 'jobs_id': jobs_id,
