@@ -6,14 +6,13 @@ import json
 import re
 import datetime
 from flask import Flask,session
-import data_base
+
 app = Flask(__name__)
 redis_store= redis.StrictRedis("localhost")
 expiry_seconds = 600
 global jobs_id
-status=''
-candidate_id=''.join(datetime.datetime.now().strftime('%H:%M:%S')+'@example.com')
-# candidate_id='17:42:47@example.com'
+
+
 @app.route('/chat', methods=['POST', 'GET'])
 def send_response():
     if request.method == 'GET':
@@ -41,20 +40,8 @@ def send_response():
             else:
                 entity_name = response['entities'][0]['entity']
                 entity_value=response['entities'][0]['value']
-            #Checks the status of the candidate whether it is old or new
-            # candidate_status=data_base.check_candidateid(candidate_id)
-            #Stores the candidate status in redis
-            # if candidate_status==False:
-            #     status='new candidate'
-            #     redis_store.set(Sessionid,'new candidate')
-            #     response_state = getstate(key, jobs_id, Sessionid)
-            # elif candidate_status==True and (redis_store.get(Sessionid)!=None):
-            #     status = 'new candidate'
-            #     response_state = getstate(key, jobs_id, Sessionid)
-            # else:
-            #    status='old candidate'
+
             response_state = getstate(key, jobs_id, Sessionid,status,entity_value,candidate_id)
-               #data_base.insert_db(jobs_id,candidate_id,response_state,user_question,entity_name,entity_value,current_date)
             dic_to_user = {
                 'jobs_id': jobs_id,
                 'usertype': usertype,

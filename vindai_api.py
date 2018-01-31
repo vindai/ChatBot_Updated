@@ -31,13 +31,7 @@ def Fetch_Question(preq,question_number,total_question,Sessionid):
             for every_preq in preq:
                    if str(every_preq.get("PreQid")) == str(question_number):
                         print(question_number)
-                        if int(question_number) == int(total_question):
-                            print("redis become empty")
-                            redis_store.set(Sessionid + ':flag', " ")
                         return every_preq.get("PreQQuestion")
-
-
-
          else:
              redis_store.set(Sessionid + ':flag', " ")
              return "Thank you! We will get back to you soon... I can help you if you have any other questions."

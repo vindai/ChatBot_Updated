@@ -1,8 +1,6 @@
 from vindai_api import Fetch_Question, Fetch_JobQuestions
-from model import interpreter
 import redis
 import random
-import data_base
 
 # opening redis connection here
 redis_store = redis.StrictRedis("localhost")
@@ -15,11 +13,11 @@ def getstate(key, job_id, Sessionid,*vartuple):
     # gets the previous intent number from Redis
     prev_intent = redis_store.get(Sessionid + ':prev_intent')
     list_intents.append(prev_intent)
-    flag=redis_store.get(Sessionid + ':flag')
+    preq_flag=redis_store.get(Sessionid + ':flag')
     current_question = int(question_no) + 1
     print(key)
 
-    if (key == "greet_intent") and (prev_intent == " ") and (flag != "yes"):
+    if (key == "greet_intent") and (prev_intent == " ") and (preq_flag == " "):
         redis_store.set(Sessionid + ':prev_intent', str(key))
         greet_list = ['Welcome!!  Are you ready to chat?', 'Hello!! Would you like to chat?',
                       'Hi welcome!! Do you wanna chat?',
@@ -28,7 +26,7 @@ def getstate(key, job_id, Sessionid,*vartuple):
         # Returns the Random response for the intent
         return ''.join(random.sample(greet_list, 1))
 
-    if key == "end_intent" and (flag != "yes"):
+    if key == "end_intent" and (preq_flag == " "):
         redis_store.set(Sessionid + ':prev_intent', str(key))
         end_list = ['Thanks for your time with me. Good Luck with your Job search !!',
                     'Nice to chat with you.All the best!!', 'Thank you. Good Luck !!',
@@ -37,13 +35,13 @@ def getstate(key, job_id, Sessionid,*vartuple):
         return ''.join(random.sample(end_list, 1))
 
 
-    if key == "misc_intent" and (flag != "yes"):
+    if key == "misc_intent" and (preq_flag == " "):
         redis_store.set(Sessionid + ':prev_intent', str(key))
         misc_list = ['Cool', 'My Pleasure', 'That\'s fine']
         return ''.join(random.sample(misc_list, 1))
 
 
-    if key == "job_query_intent" and (flag != "yes"):
+    if key == "job_query_intent" and (preq_flag == " "):
         if "end_intent" not in list_intents:
             redis_store.set(Sessionid + ':prev_intent', str(key))
             job_query = ['You can refer our website vind.ai for further details',
@@ -54,7 +52,7 @@ def getstate(key, job_id, Sessionid,*vartuple):
             return "We had a good chat !! let's catchup someother time"
 
 
-    if key == "payrate_query_intent" and (flag != "yes"):
+    if key == "payrate_query_intent" and (preq_flag == " "):
         if "end_intent" not in list_intents:
             redis_store.set(Sessionid + ':prev_intent', str(key))
             payrate_query = ['Please discuss with the client manager on payrate or salary info',
@@ -65,7 +63,7 @@ def getstate(key, job_id, Sessionid,*vartuple):
             return "We had a good chat !! let's catchup someother time"
 
 
-    if (key == "travel_query_intent") and (flag != "yes"):
+    if (key == "travel_query_intent") and (preq_flag == " "):
         if ("end_intent" not in list_intents):
             redis_store.set(Sessionid + ':prev_intent', str(key))
             travel_query = ['We are ready to pay high if you are willing to travel/relocate.',
@@ -76,7 +74,7 @@ def getstate(key, job_id, Sessionid,*vartuple):
             return "We had a good chat !! let's catchup someother time"
 
 
-    if key == "followup_query_intent" and (flag != "yes"):
+    if key == "followup_query_intent" and (preq_flag == " "):
         if ("end_intent" not in list_intents):
             redis_store.set(Sessionid + ':prev_intent', str(key))
             followup_query = ['You can get in touch with Recruiter for more details or next steps',
@@ -84,28 +82,12 @@ def getstate(key, job_id, Sessionid,*vartuple):
                               'Catch up Recruiter for further details']
             return ''.join(random.sample(followup_query, 1))
 
-    # if (key == "no_intent") or (key == "negative_intent"):
-    #     if (prev_intent == "greet_intent"):
-    #         return "Thats fine ..let's catchup later when you are ready"
 
-    if key == "visa_query_intent" and (flag != "yes"):
+    if key == "visa_query_intent" and (preq_flag == " "):
         redis_store.set(Sessionid + ':prev_intent', str(key))
         visa_list = ['We will let you know about visa related details after having a discussion with our manager',
                      'You will be intimated as soon as possible about visa details']
-        # Checks previous entities for old candidate and return response
-        if (vartuple[0] == "old candidate"):
-            candidate_id = vartuple[2]
-            previous_query, entity_value = data_base.check_old_entity(candidate_id)
-            if entity_value:
-                previous_query = ''.join(
-                    "I do have remember that you are a %s holder" % ','.join(
-                        entity_value).upper())
-                return previous_query
-            else:
-                return ''.join(random.sample(visa_list, 1))
-
-        else:
-            return ''.join(random.sample(visa_list, 1))
+        return ''.join(random.sample(visa_list, 1))
 
 
     if ((key == "positive_intent") or (key == "yes_intent") or (key == "no_intent") or (key == "negative_intent")):
