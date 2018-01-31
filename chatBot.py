@@ -41,7 +41,7 @@ def send_response():
                 entity_name = response['entities'][0]['entity']
                 entity_value=response['entities'][0]['value']
 
-            response_state = getstate(key, jobs_id, Sessionid,status,entity_value,candidate_id)
+            response_state = getstate(key, jobs_id, Sessionid,entity_value)
             dic_to_user = {
                 'jobs_id': jobs_id,
                 'usertype': usertype,
