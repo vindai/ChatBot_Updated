@@ -292,13 +292,23 @@
         "entities": []
       },
       {
-        "text": "almost not",
-        "intent": "no_intent",
+        "text": "almost 8",
+        "intent": "positive_intent",
         "entities": []
       },
       {
-        "text": "i am read y",
+        "text": "i am ready",
         "intent": "positive_intent ",
+        "entities": []
+      },
+       {
+        "text": "8 plus",
+        "intent": "positive_intent",
+        "entities": []
+      },
+       {
+        "text": "8+",
+        "intent": "positive_intent",
         "entities": []
       },
       {
@@ -857,6 +867,11 @@
         "entities": []
       },
       {
+        "text": "what about travel",
+        "intent": "travel_query_intent",
+        "entities": []
+      },
+      {
         "text": "how often do you want me to travel",
         "intent": "travel_query_intent",
         "entities": []
@@ -892,6 +907,11 @@
         "entities": []
       },
       {
+        "text": "ok",
+        "intent": "misc_intent",
+        "entities": []
+      },
+      {
         "text": "awesome",
         "intent": "misc_intent",
         "entities": []
@@ -910,203 +930,6 @@
         "text": "that's cool",
         "intent": "misc_intent",
         "entities": []
-      },
-      {
-        "text": "will you take h1 transfer",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 14,
-            "end": 16,
-            "value": "h1",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "would you take me on 1099",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 21,
-            "end": 25,
-            "value": "1099",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "would you take opt ead ",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 15,
-            "end": 18,
-            "value": "opt",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "is it a permanent or contract position",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 21,
-            "end": 29,
-            "value": "contract",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "what Visa types do you take up",
-        "intent": "visa_query_intent",
-        "entities": []
-      },
-      {
-        "text": "are you Ok with h4",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 16,
-            "end": 18,
-            "value": "h4",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "what about the Employment type - Full time or c2c",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 46,
-            "end": 49,
-            "value": "c2c",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "is this a corp to corp opening",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 10,
-            "end": 22,
-            "value": "corp to corp",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "can I know whether it is a direct requirement",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 27,
-            "end": 33,
-            "value": "direct",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "do you offer Contract positions",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 13,
-            "end": 21,
-            "value": "Contract",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "is that OK if my h1b expires in a month or two",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 17,
-            "end": 20,
-            "value": "h1b",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "i am having h1b. Is that ok",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 12,
-            "end": 15,
-            "value": "h1b",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "how about taking me on 1099",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 23,
-            "end": 27,
-            "value": "1099",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "i am an ead .Ok with you",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 8,
-            "end": 11,
-            "value": "ead ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "what about gc ead ? Am I qualified",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 11,
-            "end": 17,
-            "value": "gc ead ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "will you take h1b/opt",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 18,
-            "end": 21,
-            "value": "OPT",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "is it a direct requirement",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 8,
-            "end": 14,
-            "value": "direct",
-            "entity": "tax_type"
-          }
-        ]
       },
       {
         "text": "do you have any other opening for Android Developer",
@@ -1144,78 +967,7 @@
           }
         ]
       },
-      {
-        "text": "my h1 will expire in a month. Is that ok",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 3,
-            "end": 5,
-            "value": "h1",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "would you prefer 1099",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 17,
-            "end": 21,
-            "value": "1099",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "are you ready to take opt ead ",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 23,
-            "end": 30,
-            "value": "OPT ead ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "will you accept a gc ead ",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 18,
-            "end": 24,
-            "value": "gc ead ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "do you go for  h1 transfer",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 14,
-            "end": 17,
-            "value": " h1",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "i have gc ead . Would you take up",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 7,
-            "end": 13,
-            "value": "gc ead ",
-            "entity": "visa_type"
-          }
-        ]
-      },
+
       {
         "text": "are you looking for node.js developer",
         "intent": "job_query_intent",
@@ -1301,114 +1053,6 @@
         ]
       },
       {
-        "text": "is h1 transfer ok for you",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 3,
-            "end": 5,
-            "value": "h1",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "what about h4 transfer",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 11,
-            "end": 13,
-            "value": "h4",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "i am a gc  holder will you prefer me for this job",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 7,
-            "end": 9,
-            "value": "gc ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "what about having ead ",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 18,
-            "end": 21,
-            "value": "ead ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "is there any corp to corp opening",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 13,
-            "end": 25,
-            "value": "corp to corp",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "is it a c2c opening",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 8,
-            "end": 11,
-            "value": "c2c",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": " if i am having ead  will you consider me",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 16,
-            "end": 19,
-            "value": "ead ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
-        "text": "any other corp to corp openings there",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 10,
-            "end": 22,
-            "value": "corp to corp",
-            "entity": "tax_type"
-          }
-        ]
-      },
-      {
-        "text": "is there any openings for gc  holder",
-        "intent": "visa_query_intent",
-        "entities": [
-          {
-            "start": 26,
-            "end": 28,
-            "value": "gc ",
-            "entity": "visa_type"
-          }
-        ]
-      },
-      {
         "text": "i have 3 years experience in asp.net sql server",
         "intent": "positive_intent",
         "entities": [
@@ -1479,6 +1123,126 @@
             "entity": "skills"
           }
         ]
+      },
+      {
+        "text": "you can call me at anytime",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+      {
+        "text": "7 - 9PM",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+      {
+        "text": "9 to 10AM",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+      {
+        "text": "i am available only between 9-7pm",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+       {
+        "text": "i will be free since morning till evening",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+      {
+        "text": "you can ping me at daytime",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+      {
+        "text": "between 6 to 7p.m",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+      {
+        "text": "at any time",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+       {
+        "text": "around 7 a.m",
+        "intent": "best_time_intent",
+        "entities": []
+      },
+      {
+        "text": "i expect $40-60",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "open",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "market rate",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "my preferred package is around 30k-40k",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "i wish to get 50k-80k",
+        "intent": "salary_intent",
+        "entities": []
+      },
+       {
+        "text": "my expected salary range is 60k-90k",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "i deserve around 60k salary for this job profile",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "i can afford 70k",
+        "intent": "salary_intent",
+        "entities": []
+      },
+       {
+        "text": "my expected payrate is $80",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "70k",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "my expected salary range is around $70",
+        "intent": "salary_intent",
+        "entities": []
+      },
+       {
+        "text": "$40-$50",
+        "intent": "salary_intent",
+        "entities": []
+      },
+       {
+        "text": "it's better if you pay me around 70k",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "40k to 90k",
+        "intent": "salary_intent",
+        "entities": []
+      },
+      {
+        "text": "50-80k",
+        "intent": "salary_intent",
+        "entities": []
       }
     ]
   }
