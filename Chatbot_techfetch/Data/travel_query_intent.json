@@ -1,0 +1,125 @@
+{
+  "rasa_nlu_data":{
+    "common_examples":[
+      {
+        "text":"what about travel benefits",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you have remote work option facility",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you allow to work remote atleast on alternative days",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what about relocation expenses",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"should i have to travel often",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"any policies for relocation",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"will you take me if i can't travel",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is it necessary to travel for this job",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"how often do you want me to travel",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"give more details on relocation criteria",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"can you get back to me confirming your travel and relocation benefits",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is there any travel benefits ",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"shall i know about relocation benefits ",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"does it include my travel expenses",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"does that cover travel and relocation benefits",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what if i say, that i cant travel often",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"shall i go with weekly 2 days remote work option",
+        "intent":"travel_query_intent",
+        "entities":[
+
+        ]
+      }
+    ]
+  }
+}
