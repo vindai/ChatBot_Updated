@@ -1,4 +1,4 @@
-# ChatBot_Techfetch
+# Chatbot_Techfetch
 To display user response from previous chat by extracting the entity values
 Data Folder : Stores config files and input training data
 models : directory under which the trained model gets stored #Chatbot.py: Its an entry which gets user message from vind.ai page ,
