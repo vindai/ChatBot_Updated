@@ -1,8 +1,0 @@
-{
-  "pipeline": ["nlp_spacy","tokenizer_whitespace", "tokenizer_spacy","ner_crf","ner_spacy","ner_synonyms","intent_featurizer_spacy","intent_featurizer_ngrams", "intent_classifier_sklearn"],
-  "path" : "E:/Sample/models/trained",
-  "data" : "E:/Sample/Data/final_data.json",
-  "fine_tune_spacy_ner": true
-}
-
-

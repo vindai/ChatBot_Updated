@@ -46,9 +46,9 @@
     }, 
     "language": "en", 
     "intent_classifier_sklearn": "intent_classifier.pkl", 
-    "trained_at": "20180306-181511", 
+    "trained_at": "20180320-185052", 
     "training_data": "training_data.json", 
     "spacy_model_name": "en", 
-    "rasa_nlu_version": "0.10.4", 
+    "rasa_nlu_version": "0.11.3", 
     "ngram_featurizer": "ngram_featurizer.pkl"
 }
