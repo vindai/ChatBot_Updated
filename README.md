@@ -1,5 +1,5 @@
 # Chatbot_Techfetch
-Data Folder : Stores config files and input training data
+Data Folder : Stores input training data
 config : Contains the config_spacy json file
 models : Directory under which the trained model gets stored #Chatbot.py: Its an entry which gets user message from vind.ai page ,
 runs it through model and returns the response #Model.py: Every time model gets loaded from this saved directory
