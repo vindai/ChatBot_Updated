@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "rasa_nlu_data": {
     "common_examples": [
 	  {
+=======
+  "rasa_nlu_data":{
+    "common_examples":[
+      {
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
         "text":"do you need someone immediately",
         "intent":"followup_query_intent",
         "entities":[
@@ -135,7 +141,11 @@
         ]
       },
       {
+<<<<<<< HEAD
         "text":"is it right to expect a call or an email regarding this position ",
+=======
+        "text":"is it right to expect a call or an email regarding this position",
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
         "intent":"followup_query_intent",
         "entities":[
 
@@ -182,6 +192,23 @@
         "entities":[
 
         ]
+<<<<<<< HEAD
+=======
+      },
+      {
+        "text":"regarding interview shedule",
+        "intent":"followup_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"i would like to prefer skype interview instead of face to face",
+        "intent":"followup_query_intent",
+        "entities":[
+
+        ]
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
       }
     ]
   }

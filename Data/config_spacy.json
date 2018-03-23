@@ -1,8 +1,0 @@
-{
-  "pipeline": "spacy_sklearn",
-  "path" : "E:/chat_demo_updated/models/trained",
-  "data" : "E:/chat_demo_updated/Data/rasa_data.json",
-  "fine_tune_spacy_ner": true
-}
-
-

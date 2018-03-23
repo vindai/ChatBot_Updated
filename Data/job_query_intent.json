@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "rasa_nlu_data": {
     "common_examples": [
       {
@@ -120,6 +121,142 @@
         "text": "may i know other job openings",
         "intent": "job_query_intent",
         "entities": []
+=======
+  "rasa_nlu_data":{
+    "common_examples":[
+      {
+        "text":"what are the preferred skills for this Job",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what skills are you looking for",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"which are the skills that would get qualified here",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"let me know the skills that you would need",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you have positions only for this skill",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"are any other skills allowed here",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you have any other similar openings",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is there an opening in any other location",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"i am into java development. any open position for that",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"are you looking for any special skills",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"please suggest some other Jobs",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"looking for an opening in python development",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is there an opening in my place",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"contact me if you look for a database admin",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is that into product development",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"are you into saas, i am interested if so.",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"i am into front end. call me for any opening there",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what are the other job openings, is there any opening for php developer",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"please list the jobs with 5-7 years experience",
+        "intent":"job_query_intent",
+        "entities":[
+
+        ]
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
       }
     ]
   }

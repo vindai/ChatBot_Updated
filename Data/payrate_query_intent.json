@@ -37,35 +37,55 @@
         ]
       },
       {
+<<<<<<< HEAD
         "text":"rate/hour please!",
-        "intent":"payrate_query_intent",
-        "entities":[
-
-        ]
-      },
-      {
-        "text":"how much vacation and sick leave do i get",
-        "intent":"payrate_query_intent",
-        "entities":[
-
-        ]
-      },
-      {
-        "text":"what type of benefits are included",
-        "intent":"payrate_query_intent",
-        "entities":[
-
-        ]
-      },
-      {
-        "text":"when does my eligibility start",
-        "intent":"payrate_query_intent",
-        "entities":[
-
-        ]
-      },
-      {
+=======
         "text":"whether the salary is based on doe",
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+<<<<<<< HEAD
+        "text":"how much vacation and sick leave do i get",
+=======
+        "text":"rate/hour please!",
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+<<<<<<< HEAD
+        "text":"what type of benefits are included",
+=======
+        "text":"how much vacation and sick leave do i get",
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+<<<<<<< HEAD
+        "text":"when does my eligibility start",
+=======
+        "text":"what type of benefits are included",
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+<<<<<<< HEAD
+        "text":"whether the salary is based on doe",
+=======
+        "text":"when does my eligibility start",
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
         "intent":"payrate_query_intent",
         "entities":[
 

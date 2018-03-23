@@ -290,6 +290,7 @@
         "intent": "no_intent",
         "entities": [],
         "text": "no way"
+<<<<<<< HEAD
       },
       {
         "intent": "positive_intent",
@@ -314,6 +315,32 @@
       {
         "intent": "positive_intent",
         "entities": [],
+=======
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "almost 8"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "i am ready"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "8 plus"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "8+"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
         "text": "ok"
       },
       {
@@ -550,6 +577,7 @@
         "intent": "negative_intent",
         "entities": [],
         "text": "not an expertise in software sales but having relevant experience in other products"
+<<<<<<< HEAD
       },
       {
         "intent": "misc_intent",
@@ -622,6 +650,240 @@
         ],
         "text": "have 3 years experience in asp.net"
       },
+=======
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "okies"
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "okay"
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "ok thank you"
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "ok"
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "awesome"
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "sounds great"
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "cool"
+      }, 
+      {
+        "entities": [], 
+        "intent": "misc_intent", 
+        "text": "that's cool"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 47, 
+            "value": "asp.net sql server", 
+            "entity": "skills"
+          }
+        ], 
+        "intent": "positive_intent", 
+        "text": "i have 3 years experience in asp.net sql server"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 37, 
+            "value": "sql server", 
+            "entity": "skills"
+          }
+        ], 
+        "intent": "positive_intent", 
+        "text": "have 2 years experience in sql server"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 34, 
+            "value": "asp.net", 
+            "entity": "skills"
+          }
+        ], 
+        "intent": "positive_intent", 
+        "text": "have 3 years experience in asp.net"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "you can call me at anytime"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "7 - 9PM"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "9 to 10AM"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "i am available only between 9-7pm"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "i will be free since morning till evening"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "you can ping me at daytime"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "between 6 to 7p.m"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "at any time"
+      }, 
+      {
+        "entities": [], 
+        "intent": "best_time_intent", 
+        "text": "around 7 a.m"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "i expect $40-60"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "open"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "market rate"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "my preferred package is around 30k-40k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "i wish to get 50k-80k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "my expected salary range is 60k-90k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "i deserve around 60k salary for this job profile"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "i can afford 70k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "my expected payrate is $80"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "70k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "my expected salary range is around $70"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "$40-$50"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "it's better if you pay me around 70k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "40k to 90k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "salary_intent", 
+        "text": "50-80k"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "i am an opt ead"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "i am having h1b"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "i am a green card holder"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "gc ead"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "my visa status is h4"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "i am on h4 ead"
+      }, 
+      {
+        "entities": [], 
+        "intent": "positive_intent", 
+        "text": "us citizen"
+      }, 
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
       {
         "intent": "positive_intent",
         "entities": [
@@ -790,6 +1052,7 @@
         "text": "tell me the procedure to apply for this role"
       },
       {
+<<<<<<< HEAD
         "intent": "followup_query_intent",
         "entities": [],
         "text": "can i refer my friend"
@@ -814,6 +1077,32 @@
         "entities": [],
         "text": "when will i get a call from you"
       },
+=======
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "can i refer my friend"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "what is the next step"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "will i get an email after this"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "will you call me and update"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "when will i get a call from you"
+      }, 
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
       {
         "intent": "followup_query_intent",
         "entities": [],
@@ -890,6 +1179,7 @@
         "text": "what are the preferred skills for this Job"
       },
       {
+<<<<<<< HEAD
         "intent": "job_query_intent",
         "entities": [],
         "text": "what skills are you looking for"
@@ -1332,6 +1622,490 @@
       {
         "intent": "visa_query_intent",
         "entities": [],
+=======
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "whom should I talk to if i need to know more"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "what is the next procedure to a proper followup"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "is it right to expect a call or an email regarding this position"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "i need someone to properly guide me.who will do this"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "should i follow up with you or will you take care"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "will you call me if i am a good fit"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "what about referring my friend for this position"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "which company is this"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "which company are you recruiting for"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "regarding interview shedule"
+      }, 
+      {
+        "entities": [], 
+        "intent": "followup_query_intent", 
+        "text": "i would like to prefer skype interview instead of face to face"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "what are the preferred skills for this Job"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "what skills are you looking for"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "which are the skills that would get qualified here"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "let me know the skills that you would need"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "do you have positions only for this skill"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "are any other skills allowed here"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "do you have any other similar openings"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "is there an opening in any other location"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "i am into java development. any open position for that"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "are you looking for any special skills"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "please suggest some other Jobs"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "looking for an opening in python development"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "is there an opening in my place"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "contact me if you look for a database admin"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "is that into product development"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "are you into saas, i am interested if so."
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "i am into front end. call me for any opening there"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "what are the other job openings, is there any opening for php developer"
+      }, 
+      {
+        "entities": [], 
+        "intent": "job_query_intent", 
+        "text": "please list the jobs with 5-7 years experience"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "what kind of benefits do you offer"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "is there any insurance coverage for my family"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "do you provide health insurance coverage"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "do you have employment benefits for me and family too"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "how will the employment benefits accrue"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "whether the salary is based on doe"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "rate/hour please!"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "how much vacation and sick leave do i get"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "what type of benefits are included"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "when does my eligibility start"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "do you have 401k program"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "is there any paid time off provide by the employer"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "will you provide any sign-on bonus"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "what type of pension plan is there"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "does the company offer short-term and long-term disability coverage"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "are there educational and training benefits"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "can i negotiate the pay"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "shall i know the payrate for this job"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "my payrate"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "what about the billing rate"
+      }, 
+      {
+        "entities": [], 
+        "intent": "payrate_query_intent", 
+        "text": "shall i know about the package details"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "what about travel benefits"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "do you have remote work option facility"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "do you allow to work remote atleast on alternative days"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "what about relocation expenses"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "should i have to travel often"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "any policies for relocation"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "will you take me if i can't travel"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "is it necessary to travel for this job"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "how often do you want me to travel"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "give more details on relocation criteria"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "can you get back to me confirming your travel and relocation benefits"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "is there any travel benefits "
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "shall i know about relocation benefits "
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "does it include my travel expenses"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "does that cover travel and relocation benefits"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "what if i say, that i cant travel often"
+      }, 
+      {
+        "entities": [], 
+        "intent": "travel_query_intent", 
+        "text": "shall i go with weekly 2 days remote work option"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "will you take h1 transfer"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "would you take me on 1099"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "would you take opt ead"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is it a permanent or contract position"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "what visa types do you take up"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "are you ok with h4"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "what about the employment type - full time or c2c"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is this a corp to corp opening"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "can I know whether it is a direct requirement"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "do you offer contract positions"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is that ok if my h1b expires in a month or two"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "i am having h1b. Is that ok"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "how about taking me on 1099"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "i am an ead. ok with you"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "what about gc ead ? am i qualified"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "will you take h1b/opt"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is it a direct requirement"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "my h1 will expire in a month. is that ok"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "are you ready to take  opt ead"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "will you accept a gc ead"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "i have gc ead. would you take up"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is h1 transfer ok for you"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "what about h4 transfer"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "i am a gc holder will you prefer me for this job"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is there any corp to corp opening"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is this a full time employment"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": "is it a c2c opening"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+        "text": " if i am having ead will you consider me"
+      }, 
+      {
+        "entities": [], 
+        "intent": "visa_query_intent", 
+>>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
         "text": "is there any openings for gc holder"
       }
     ],
