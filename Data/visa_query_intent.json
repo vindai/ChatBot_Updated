@@ -1,0 +1,209 @@
+{
+  "rasa_nlu_data":{
+    "common_examples":[
+      {
+        "text":"will you take h1 transfer",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"would you take me on 1099",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"would you take opt ead",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is it a permanent or contract position",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what visa types do you take up",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"are you ok with h4",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what about the employment type - full time or c2c",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is this a corp to corp opening",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"can I know whether it is a direct requirement",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you offer contract positions",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is that ok if my h1b expires in a month or two",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"i am having h1b. Is that ok",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"how about taking me on 1099",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"i am an ead. ok with you",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what about gc ead ? am i qualified",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"will you take h1b/opt",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is it a direct requirement",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"my h1 will expire in a month. is that ok",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"are you ready to take  opt ead",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"will you accept a gc ead",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"i have gc ead. would you take up",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is h1 transfer ok for you",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what about h4 transfer",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"i am a gc holder will you prefer me for this job",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is there any corp to corp opening",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is this a full time employment",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is it a c2c opening",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":" if i am having ead will you consider me",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is there any openings for gc holder",
+        "intent":"visa_query_intent",
+        "entities":[
+
+        ]
+      }
+    ]
+  }
+}

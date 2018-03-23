@@ -1,0 +1,153 @@
+{
+  "rasa_nlu_data":{
+    "common_examples":[
+      {
+        "text":"what kind of benefits do you offer",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is there any insurance coverage for my family",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you provide health insurance coverage",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you have employment benefits for me and family too",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"how will the employment benefits accrue",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"rate/hour please!",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"how much vacation and sick leave do i get",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what type of benefits are included",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"when does my eligibility start",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"whether the salary is based on doe",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"do you have 401k program",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"is there any paid time off provide by the employer",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"will you provide any sign-on bonus",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what type of pension plan is there",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"does the company offer short-term and long-term disability coverage",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"are there educational and training benefits",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"can i negotiate the pay",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"shall i know the payrate for this job",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"my payrate",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"what about the billing rate",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      },
+      {
+        "text":"shall i know about the package details",
+        "intent":"payrate_query_intent",
+        "entities":[
+
+        ]
+      }
+    ]
+  }
+}
