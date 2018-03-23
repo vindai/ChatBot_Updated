@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import requests
 import json
 import re
@@ -39,6 +37,7 @@ def Fetch_Question(preq,question_number,total_question,Sessionid):
     :param preq: preq question
     :param question_number: number of question like 1, 2, 3
     :param total_question:  total number of preq questions
+
     :param Sessionid: id for the particular session
     :return: prequalification question, returns each question when called
     '''
@@ -51,9 +50,8 @@ def Fetch_Question(preq,question_number,total_question,Sessionid):
                       return every_preq.get("PreQQuestion")
         else:
             redis_store.set(Sessionid + ':flag',"n")
-            return "Thank you! We will get back to you soon...If you have queries kindly leave a message."
+            return "Thank you! We will get back to you soon...If you have any queries related to travel/ payrate/ job/ visa kindly leave a message."
 
     except Exception as e:
         print(e)
         print("Unable to get prequalified question for this job")
->>>>>>> e96b5500c9c051a62f27fe39fc9558f3740dc458
