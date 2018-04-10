@@ -16,7 +16,7 @@ def Fetch_JobQuestions(jobid,clientid = "VAccess20171",clientname = "ChatBotAcce
    '''
    try:
         jobid = re.sub('"', '', jobid)
-        url = 'http://techfetch.com/getjobpreqdetails.asmx/getJobDetails?clientid='+ clientid + '&clientname=' \
+        url = 'http://uat.techfetch.com/getjobpreqdetails.asmx/getJobDetails?clientid='+ clientid + '&clientname=' \
               + clientname + '&jobid=' + jobid
         r = requests.get(url)
         json_parsed = json.loads(r.text)
@@ -50,6 +50,8 @@ def Fetch_Question(preq,question_number,total_question,Sessionid):
                       return every_preq.get("PreQQuestion")
         else:
             redis_store.set(Sessionid + ':flag',"n")
+            redis_store.set(Sessionid + ':preq_status', "preqend")
+            print(redis_store.get(Sessionid + ':preq_status'))
             return "Thank you! We will get back to you soon...If you have any queries related to travel/ payrate/ job/ visa kindly leave a message."
 
     except Exception as e:

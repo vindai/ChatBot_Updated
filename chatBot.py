@@ -31,17 +31,17 @@ def send_response():
             redis_store.set(Sessionid +':question',"0")
             redis_store.set(Sessionid +':prev_intent', " ")
             redis_store.set(Sessionid +':flag', "y")
+            redis_store.set(Sessionid + ':preq_status',"progress")
         if user_question:
             user_question=unicode(user_question)
             response = interpreter.parse(user_question.lower())
-
             # Get the intent name from the dictionary
             key = response['intent']['name']
             confidence_score= response['intent']['confidence']
             current_date=str(datetime.datetime.now())
-
             # Checks if the entity list is empty or not
             response_state = getstate(key, jobs_id, Sessionid,confidence_score)
+            preq_status = redis_store.get(Sessionid + ':preq_status')
             dic_to_user = {
                 'jobs_id': jobs_id,
                 'usertype': usertype,
@@ -51,8 +51,10 @@ def send_response():
                 'response': response_state,
                 'date': current_date,
                 'confidence_score': confidence_score,
-                'intent_type': key
+                'intent_type': key,
+                'preq_status': preq_status
             }
+            print(response_state,preq_status)
             return json.dumps(dic_to_user)
 
 
