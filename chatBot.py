@@ -39,8 +39,8 @@ def send_response():
             key = response['intent']['name']
             confidence_score= response['intent']['confidence']
             current_date=str(datetime.datetime.now())
-            # Checks if the entity list is empty or not
             response_state = getstate(key, jobs_id, Sessionid,confidence_score)
+            #To get the preq status from redis
             preq_status = redis_store.get(Sessionid + ':preq_status')
             dic_to_user = {
                 'jobs_id': jobs_id,
